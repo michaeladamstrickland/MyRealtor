@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var Schema   = mongoose.Schema;
-var slot = require('./slotModel');
+// var slot = require('./slotModel');
 
 var appointmentSchema = new Schema({
 	'name' : String,

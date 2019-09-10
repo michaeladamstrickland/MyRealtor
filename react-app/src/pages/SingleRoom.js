@@ -73,7 +73,7 @@ export default class SingleRoom extends Component {
                 </div>
             </section>
            
-            <div>
+            <div className="appointmentApp">
                      <MuiThemeProvider>
                         <AppointmentApp />
                      </MuiThemeProvider>

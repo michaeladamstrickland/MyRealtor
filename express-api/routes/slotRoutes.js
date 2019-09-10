@@ -8,26 +8,26 @@ module.exports = function(app) {
 /*
  * GET
  */
-app.get('/slot', slotController.list);
+router.get('/slot', slotController.list);
 
 /*
  * GET
  */
-app.get('/slot/:id', slotController.show);
+router.get('/slot/:id', slotController.show);
 
 /*
  * POST
  */
-app.post('/slot', slotController.create);
+router.post('/slot', slotController.create);
 
 /*
  * PUT
  */
-app.put('/slot/:id', slotController.update);
+router.put('/slot/:id', slotController.update);
 
 /*
  * DELETE
  */
-app.delete('/slot/:id', slotController.remove);
+router.delete('/slot/:id', slotController.remove);
 
 };

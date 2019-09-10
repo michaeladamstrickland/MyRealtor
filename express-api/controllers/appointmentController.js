@@ -12,6 +12,7 @@ module.exports = {
      * appointmentController.list()
      */
     list: function (req, res) {
+        // eslint-disable-next-line array-callback-return
         appointmentModel.find(function (err, appointments) {
             if (err) {
                 return res.status(500).json({
@@ -116,16 +117,16 @@ module.exports = {
     /**
      * appointmentController.remove()
      */
-    remove: function (req, res) {
-        var id = req.params.id;
-        appointmentModel.findByIdAndRemove(id, function (err, appointment) {
-            if (err) {
-                return res.status(500).json({
-                    message: 'Error when deleting the appointment.',
-                    error: err
-                });
-            }
-            return res.status(204).json();
-        });
-    }
+    // remove: function (req, res) {
+    //     var id = req.params.id;
+    //     appointmentModel.findByIdAndRemove(id, function (err, appointment) {
+    //         if (err) {
+    //             return res.status(500).json({
+    //                 message: 'Error when deleting the appointment.',
+    //                 error: err
+    //             });
+    //         }
+    //         return res.status(204).json();
+    //     });
+    // }
 };
