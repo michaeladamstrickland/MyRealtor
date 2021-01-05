@@ -8,7 +8,7 @@
   "dependencies": {
     "@auth0/auth0-spa-js": "^1.1.1",
     "angular": "^1.7.8",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "material-ui": "^0.20.2",
     "moment": "^2.22.2",
